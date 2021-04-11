@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFragment">
+
+    <ImageView
+        android:id="@+id/resimId"
+        android:layout_width="183dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="352dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:hint="Card Name..."
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resimId" />
+
+    <ImageButton
+        android:id="@+id/setId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setPicF"
+        android:src="@android:drawable/ic_menu_edit"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/resimId"
+        app:layout_constraintTop_toTopOf="@+id/resimId" />
+
+    <Button
+        android:id="@+id/saveButtonId"
+        android:layout_width="189dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="72dp"
+        android:onClick="saveF"
+        android:text="Save "
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <ImageButton
+        android:id="@+id/deleteImageButtonİd"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="120dp"
+        android:onClick="deleteF"
+        android:src="@android:drawable/ic_menu_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <ImageButton
+        android:id="@+id/backImageButtonId"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="backF"
+        android:src="@android:drawable/ic_menu_revert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/cardNameTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="TextView"
+        android:textColor="#FA0000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resimId" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
